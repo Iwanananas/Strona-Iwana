@@ -17,6 +17,8 @@
                 const formData = new FormData(event.target);
                 const data = Object.fromEntries(formData.entries());
 
+                console.log('Dane formularza:', data); // Dodaj logowanie danych formularza
+
                 // Przygotuj wiadomość e-mail
                 const templateParams = {
                     to_email: 'ilistopadski1@gmail.com',
@@ -67,5 +69,3 @@
     </form>
 </body>
 </html>
-
-
