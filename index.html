@@ -35,5 +35,58 @@
         <h1>Iwan Listopadski</h1>
         <p>Witam na mojej osobistej stronie internetowej!</p>
     </div>
+    <form id="survey-form">
+    <h2>Ankieta</h2>
+    
+    <p>Jak oceniasz naszą stronę?</p>
+    <label>
+        <input type="radio" name="rating" value="excellent" required> Doskonała
+    </label>
+    <label>
+        <input type="radio" name="rating" value="good"> Dobra
+    </label>
+    <label>
+        <input type="radio" name="rating" value="average"> Średnia
+    </label>
+    <label>
+        <input type="radio" name="rating" value="poor"> Słaba
+    </label>
+    
+    <br><br>
+    <label for="comments">Dodatkowe uwagi:</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+    
+    <br><br>
+    <input type="submit" value="Wyślij">
+</form>
+
+<script>
+    document.getElementById('survey-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        // Pobierz dane formularza
+        const formData = new FormData(event.target);
+        const data = Object.fromEntries(formData.entries());
+
+        // Wyślij dane do serwera (możesz dostosować poniższy kod)
+        fetch('https://example.com/submit-form', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(result => {
+            console.log('Sukces:', result);
+            alert('Dziękujemy za wypełnienie ankiety!');
+        })
+        .catch(error => {
+            console.error('Błąd:', error);
+            alert('Wystąpił błąd podczas wysyłania ankiety.');
+        });
+    });
+</script>
+
 </body>
 </html>
