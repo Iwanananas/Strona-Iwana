@@ -7,7 +7,7 @@
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            emailjs.init('YOUR_USER_ID'); // Zamień na swój USER_ID z EmailJS
+            emailjs.init(service_todoinr); // Zamień na swój USER_ID z EmailJS
 
             document.getElementById('survey-form').addEventListener('submit', function(event) {
                 event.preventDefault();
@@ -24,7 +24,7 @@
                 };
 
                 // Wyślij e-mail
-                emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+                emailjs.send(service_todoinr, service_todoinr, TO JEST WIADOMOŚĆ Z ANKIETY)
                 .then(function(response) {
                     console.log('Sukces:', response);
                     alert('Dziękujemy za wypełnienie ankiety!');
