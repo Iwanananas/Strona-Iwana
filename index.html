@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ankieta</title>
+    <!-- Zaktualizowany skrypt EmailJS -->
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            emailjs.init('1EivRrZTRQev8c2q4'); 
+            emailjs.init('1EivRrZTRQev8c2q4'); // Inicjalizuj EmailJS z Twoim publicznym kluczem
 
             document.getElementById('survey-form').addEventListener('submit', function(event) {
                 event.preventDefault();
@@ -67,4 +68,5 @@
     </form>
 </body>
 </html>
+
 
