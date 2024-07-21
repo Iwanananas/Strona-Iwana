@@ -1,4 +1,4 @@
-\<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
@@ -7,8 +7,8 @@
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Zamień na swój USER_ID z EmailJS
-            emailjs.init(1EivRrZTRQev8c2q4); 
+            // Inicjalizacja EmailJS z Twoim publicznym kluczem
+            emailjs.init('1EivRrZTRQev8c2q4'); 
 
             document.getElementById('survey-form').addEventListener('submit', function(event) {
                 event.preventDefault();
@@ -25,7 +25,7 @@
                 };
 
                 // Wyślij e-mail
-                emailjs.send(service_todoinr, template_mz7jnhx, templateParams)
+                emailjs.send('service_todoinr', 'template_mz7jnhx', templateParams)
                 .then(function(response) {
                     console.log('Sukces:', response);
                     alert('Dziękujemy za wypełnienie ankiety!');
