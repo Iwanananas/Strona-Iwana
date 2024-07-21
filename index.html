@@ -7,26 +7,24 @@
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Inicjalizacja EmailJS z Twoim publicznym kluczem
             emailjs.init('1EivRrZTRQev8c2q4'); 
 
             document.getElementById('survey-form').addEventListener('submit', function(event) {
                 event.preventDefault();
 
-                // Pobierz dane formularza
                 const formData = new FormData(event.target);
                 const data = Object.fromEntries(formData.entries());
 
-                console.log('Dane formularza:', data); // Dodaj logowanie danych formularza
+                console.log('Dane formularza:', data); // Sprawdź, jakie dane są przesyłane
 
-                // Przygotuj wiadomość e-mail
                 const templateParams = {
                     to_email: 'ilistopadski1@gmail.com',
                     rating: data.rating,
                     comments: data.comments
                 };
 
-                // Wyślij e-mail
+                console.log('Parametry szablonu:', templateParams); // Sprawdź, jakie parametry są używane
+
                 emailjs.send('service_todoinr', 'template_mz7jnhx', templateParams)
                 .then(function(response) {
                     console.log('Sukces:', response);
@@ -69,3 +67,4 @@
     </form>
 </body>
 </html>
+
