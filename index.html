@@ -12,7 +12,7 @@
         
         <p>Jak oceniasz moją stronę?</p>
         <label>
-            <input type="radio" name="rating" value="excellent" required> Doskonała
+            <input type="radio" name="rating" name="rating" value="excellent" required> Doskonała
         </label>
         <label>
             <input type="radio" name="rating" value="good"> Dobra
@@ -27,6 +27,9 @@
         <br><br>
         <label for="comments">Dodatkowe uwagi:</label><br>
         <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        
+        <br><br>
+        <input type="hidden" name="signature" value="Iwan Listopadski">
         
         <br><br>
         <input type="submit" value="Wyślij">
