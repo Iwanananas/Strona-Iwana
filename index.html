@@ -3,36 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ankieta Iwana</title>
+    <title>Ankieta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('path/to/your/background.jpg'); /* Zmień na ścieżkę do Twojego pliku JPG */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8); /* Białe tło z przezroczystością */
+            padding: 20px;
+            max-width: 600px;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .signature {
+            background-color: rgba(0, 0, 0, 0.1); /* Szare tło */
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
-    <h1>Witaj na mojej stronie!</h1>
-    <form id="survey-form" action="https://formspree.io/f/mjkbgyyz" method="POST">
-        <h2>Ankieta</h2>
-        
-        <p>Jak oceniasz moją stronę?</p>
-        <label>
-            <input type="radio" name="rating" name="rating" value="excellent" required> Doskonała
-        </label>
-        <label>
-            <input type="radio" name="rating" value="good"> Dobra
-        </label>
-        <label>
-            <input type="radio" name="rating" value="average"> Średnia
-        </label>
-        <label>
-            <input type="radio" name="rating" value="poor"> Słaba
-        </label>
-        
-        <br><br>
-        <label for="comments">Dodatkowe uwagi:</label><br>
-        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
-        
-        <br><br>
-        <input type="hidden" name="signature" value="Iwan Listopadski">
-        
-        <br><br>
-        <input type="submit" value="Wyślij">
-    </form>
+    <div class="container">
+        <h1>Witaj na mojej stronie!</h1>
+        <form id="survey-form" action="https://formspree.io/f/mjkbgyyz" method="POST">
+            <h2>Ankieta</h2>
+            
+            <p>Jak oceniasz moją stronę?</p>
+            <label>
+                <input type="radio" name="rating" value="excellent" required> Doskonała
+            </label>
+            <label>
+                <input type="radio" name="rating" value="good"> Dobra
+            </label>
+            <label>
+                <input type="radio" name="rating" value="average"> Średnia
+            </label>
+            <label>
+                <input type="radio" name="rating" value="poor"> Słaba
+            </label>
+            
+            <br><br>
+            <label for="comments">Dodatkowe uwagi:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+            
+            <br><br>
+            <input type="hidden" name="signature" value="Iwan Listopadski">
+            
+            <br><br>
+            <input type="submit" value="Wyślij">
+        </form>
+
+        <div class="signature">
+            <p>Podpis: Iwan Listopadski</p>
+        </div>
+    </div>
 </body>
 </html>
