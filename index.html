@@ -3,49 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ankieta</title>
-    <!-- Zaktualizowany skrypt EmailJS -->
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            emailjs.init('1EivRrZTRQev8c2q4'); // Inicjalizuj EmailJS z Twoim publicznym kluczem
-
-            document.getElementById('survey-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-
-                const formData = new FormData(event.target);
-                const data = Object.fromEntries(formData.entries());
-
-                console.log('Dane formularza:', data); // Sprawdź, jakie dane są przesyłane
-
-                const templateParams = {
-                    to_email: 'ilistopadski1@gmail.com',
-                    rating: data.rating,
-                    comments: data.comments
-                };
-
-                console.log('Parametry szablonu:', templateParams); // Sprawdź, jakie parametry są używane
-
-                emailjs.send('service_todoinr', 'template_mz7jnhx', templateParams)
-                .then(function(response) {
-                    console.log('Sukces:', response);
-                    alert('Dziękujemy za wypełnienie ankiety!');
-                })
-                .catch(function(error) {
-                    console.error('Błąd:', error);
-                    alert('Wystąpił błąd podczas wysyłania ankiety.');
-                    console.log('Szczegóły błędu:', error.text); // Dodaj dodatkowe informacje o błędzie
-                });
-            });
-        });
-    </script>
+    <title>Ankieta Iwana</title>
 </head>
 <body>
-    <h1>Witaj na naszej stronie!</h1>
-    <form id="survey-form">
+    <h1>Witaj na mojej stronie!</h1>
+    <form id="survey-form" action="https://formspree.io/f/mjkbgyyz" method="POST">
         <h2>Ankieta</h2>
         
-        <p>Jak oceniasz naszą stronę?</p>
+        <p>Jak oceniasz moją stronę?</p>
         <label>
             <input type="radio" name="rating" value="excellent" required> Doskonała
         </label>
@@ -68,5 +33,3 @@
     </form>
 </body>
 </html>
-
-
