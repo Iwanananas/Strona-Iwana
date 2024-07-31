@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url(https://i.pinimg.com/originals/c5/9a/d2/c59ad2bd4ad2fbacd04017debc679ddb.gif); /* Zmień na ścieżkę do Twojego pliku GIF */
+            background-image: url(https://i.pinimg.com/originals/c5/9a/d2/c59ad2bd4ad2fbacd04017debc679ddb.gif);
             background-size: cover;
             background-position: center;
             margin: 0;
@@ -16,7 +16,7 @@
         }
 
         .container {
-            background-color: rgba(255, 255, 255, 0.8); /* Białe tło z przezroczystością */
+            background-color: rgba(255, 255, 255, 0.8);
             padding: 20px;
             max-width: 600px;
             margin: 50px auto;
@@ -25,12 +25,51 @@
         }
 
         .signature {
-            background-color: rgba(0, 0, 0, 0.1); /* Szare tło */
+            background-color: rgba(0, 0, 0, 0.1);
             padding: 10px;
             text-align: center;
             border-radius: 5px;
             margin-top: 20px;
             font-style: italic;
+        }
+
+        /* Dodatkowe style dla urządzeń mobilnych */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+                margin: 20px auto;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+
+            textarea {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+                margin: 10px auto;
+            }
+
+            h1 {
+                font-size: 1.2em;
+            }
+
+            h2 {
+                font-size: 1em;
+            }
+
+            label, .signature {
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
@@ -71,4 +110,3 @@
     </div>
 </body>
 </html>
-
