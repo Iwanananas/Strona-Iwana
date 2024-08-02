@@ -1,7 +1,7 @@
 {
-  "name": "Twoja Aplikacja",
+  "name": "Aplikacja Iwana",
   "short_name": "Aplikacja",
-  "start_url": "/",
+  "start_url": "/https://iwanananas.github.io/Strona-Iwana/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
