@@ -81,6 +81,7 @@
     </style>
 </head>
 <body>
+    <button id="p5">Kopytka</button>
     <div class="container">
         <h1>Witaj na mojej stronie!</h1>
         <form id="survey-form" action="https://formspree.io/f/mjkbgyyz" method="POST">
@@ -127,6 +128,14 @@
             console.log('Service Worker registration failed:', error);
           });
       }
+        
+        
+        const p5=document.getElementById("p5")
+        p5.addEventListener("click",()=>{
+           console.log(Kopytka);
+        }) 
+
+    
     </script>
 </body>
 </html>
