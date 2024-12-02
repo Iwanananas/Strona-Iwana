@@ -1,4 +1,11 @@
-      #comments1 {
+
+
+
+
+.text {
+      text-allign: center;
+}
+#comments1 {
                     resize: none;
                     display: flex;
                     align-items: flex-start; /* Ustawienie tekstu na górze */
