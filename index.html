@@ -6,91 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strona Iwana</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <style>
 
-               #comments1 {
-                    resize: none;
-                    display: flex;
-                    align-items: flex-start; /* Ustawienie tekstu na górze */
-                    text-allign: top;
-                    width: 200px;
-                    height: 50px;
-
-                }
-            
-        body {
-            font-family: Arial, sans-serif;
-            background-image: url(pexels-pixabay-531880.jpg);
-            background-size: cover;
-            background-position: center;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            max-width: 600px;
-            margin: 50px auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .signature {
-            background-color: rgba(0, 0, 0, 0.1);
-            padding: 10px;
-            text-align: center;
-            border-radius: 5px;
-            margin-top: 20px;
-            font-style: italic;
-        }
-
-        /* Dodatkowe style dla urządzeń mobilnych */
-        @media (max-width: 768px) {
-            .container {
-                padding: 15px;
-                margin: 20px auto;
-            }
-
-            h1 {
-                font-size: 1.5em;
-            }
-
-            h2 {
-                font-size: 1.2em;
-            }
-
-            textarea {
-                width: 100%;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .container {
-                padding: 10px;
-                margin: 10px auto;
-            }
-
-            h1 {
-                font-size: 1.2em;
-            }
-
-            h2 {
-                font-size: 1em;
-            }
-
-            label, .signature {
-                font-size: 0.9em;
-            }
-        }
-    </style>
 </head>
 <body>
 
     <div class="container">
         <h1>Witaj na mojej stronie!</h1>
         <form id="survey-form" action="https://formspree.io/f/mjkbgyyz" method="POST">
-            <h2>Ankieta</h2>
+            <h2 class="text">Ankieta</h2>
             
             <p>Jak oceniasz moją stronę?</p>
             <label>
