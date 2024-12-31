@@ -2,13 +2,13 @@
 
       
             .blok-lewy {
-        width: 200px; /* szerokość bloku */
-        height: 100px; /* wysokość bloku */
-        background-color: lightblue; /* kolor tła */
-        float: left; /* powoduje, że blok przylega do lewej strony */
-        margin: 10px; /* odstępy zewnętrzne */
-        padding: 10px; /* odstępy wewnętrzne */
-        border: 1px solid black; /* ramka */
+        width: 250px;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 15px;
+        font-family: Arial, sans-serif;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       }
 
 
