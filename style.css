@@ -27,7 +27,7 @@
                     text-allign: top;
                     width: 200px;
                     height: 50px;
-                    allign: center;
+                    padding-top: 0; 
                 }
             
         body {
