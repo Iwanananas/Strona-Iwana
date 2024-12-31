@@ -58,7 +58,7 @@
         }
         /* Dodatkowe style dla urządzeń mobilnych */
         @media (max-width: 768px) {
-            .container {
+            .container, .blok-lewy {
                 padding: 15px;
                 margin: 20px auto;
             }
@@ -73,7 +73,7 @@
             }
         }
         @media (max-width: 480px) {
-            .container {
+            .container,  .blok-lewy {
                 padding: 10px;
                 margin: 10px auto;
             }
