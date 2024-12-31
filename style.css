@@ -1,11 +1,23 @@
 
 
+      .blok lewy {
+            .blok-lewy {
+        width: 200px; /* szerokość bloku */
+        height: 100px; /* wysokość bloku */
+        background-color: lightblue; /* kolor tła */
+        float: left; /* powoduje, że blok przylega do lewej strony */
+        margin: 10px; /* odstępy zewnętrzne */
+        padding: 10px; /* odstępy wewnętrzne */
+        border: 1px solid black; /* ramka */
+      }
 
 
-.text {
+
+      .text {
       text-allign: center;
-}
-#comments1 {
+      }
+      #comments1 {
+
                     resize: none;
                     display: flex;
                     align-items: flex-start; /* Ustawienie tekstu na górze */
