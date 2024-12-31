@@ -36,6 +36,8 @@
             background-position: center;
             margin: 0;
             padding: 0;
+            align-items: center;  /* Centers items vertically */
+            height: 100vh;  /* Ensures the body takes the full height of the viewport */
         }
         .container {
             background-color: rgba(255, 255, 255, 0.8);
