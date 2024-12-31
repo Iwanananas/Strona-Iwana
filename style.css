@@ -11,7 +11,7 @@
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         height: 80%;
         float: left;
-        float: middle;
+        
       }
 
 
@@ -27,6 +27,7 @@
                     text-allign: top;
                     width: 200px;
                     height: 50px;
+                    allign: center;
                 }
             
         body {
