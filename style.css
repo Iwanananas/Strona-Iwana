@@ -1,89 +1,88 @@
+.blok-lewy {
+    width: 250px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 80%;
+    float: left;
+}
 
+.text {
+    text-align: center;
+}
 
-      
-            .blok-lewy {
-        width: 250px;
-        background-color: #f9f9f9;
-        border: 1px solid #ccc;
-        border-radius: 5px;
+#comments1 {
+    width: 100%; /* Zwiększamy szerokość input */
+    height: 40px; /* Wysokość input */
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: left; /* Wyrównanie tekstu do lewej */
+    box-sizing: border-box; /* Zapewnia, że padding nie wpływa na szerokość */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(pexels-pixabay-531880.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    align-items: center; /* Centers items vertically */
+    height: 100vh; /* Ensures the body takes the full height of the viewport */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.signature {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* Dodatkowe style dla urządzeń mobilnych */
+@media (max-width: 768px) {
+    .container, .blok-lewy {
         padding: 15px;
-        font-family: Arial, sans-serif;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        height: 80%;
-        float: left;
-        
-      }
+        margin: 20px auto;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    input[type="text"] {
+        width: 100%; /* Rozszerza szerokość input */
+    }
+}
 
-
-
-      .text {
-      text-allign: center;
-      }
-      #comments1 {
-
-                    resize: none;
-                    display: flex;
-                    align-items: flex-start; /* Ustawienie tekstu na górze */
-                    text-allign: top;
-                    width: 200px;
-                    height: 50px;
-                    padding-top: 0; 
-                }
-            
-        body {
-            font-family: Arial, sans-serif;
-            background-image: url(pexels-pixabay-531880.jpg);
-            background-size: cover;
-            background-position: center;
-            margin: 0;
-            padding: 0;
-            align-items: center;  /* Centers items vertically */
-            height: 100vh;  /* Ensures the body takes the full height of the viewport */
-        }
-        .container {
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            max-width: 600px;
-            margin: 50px auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .signature {
-            background-color: rgba(0, 0, 0, 0.1);
-            padding: 10px;
-            text-align: center;
-            border-radius: 5px;
-            margin-top: 20px;
-            font-style: italic;
-        }
-        /* Dodatkowe style dla urządzeń mobilnych */
-        @media (max-width: 768px) {
-            .container, .blok-lewy {
-                padding: 15px;
-                margin: 20px auto;
-            }
-            h1 {
-                font-size: 1.5em;
-            }
-            h2 {
-                font-size: 1.2em;
-            }
-            textarea {
-                width: 100%;
-            }
-        }
-        @media (max-width: 480px) {
-            .container,  .blok-lewy {
-                padding: 10px;
-                margin: 10px auto;
-            }
-            h1 {
-                font-size: 1.2em;
-            }
-            h2 {
-                font-size: 1em;
-            }
-            label, .signature {
-                font-size: 0.9em;
-            }
-        }
+@media (max-width: 480px) {
+    .container, .blok-lewy {
+        padding: 10px;
+        margin: 10px auto;
+    }
+    h1 {
+        font-size: 1.2em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    label, .signature {
+        font-size: 0.9em;
+    }
+}
