@@ -69,6 +69,10 @@ body {
     input[type="text"] {
         width: 100%; /* Rozszerza szerokość input */
     }
+    .blok-lewy {
+        width: auto;
+        height: auto;
+    }
 }
 
 @media (max-width: 480px) {
@@ -84,5 +88,9 @@ body {
     }
     label, .signature {
         font-size: 0.9em;
+    }
+        .blok-lewy {
+        width: auto;
+        height: auto;
     }
 }
