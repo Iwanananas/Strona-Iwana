@@ -34,6 +34,7 @@ body {
     padding: 0;
     align-items: center; /* Centers items vertically */
     height: 100vh; /* Ensures the body takes the full height of the viewport */
+    overflow-y: hidden;
 }
 
 .container {
